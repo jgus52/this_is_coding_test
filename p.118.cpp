@@ -4,8 +4,8 @@ int main(){
     int N, M,A,B,D, temp;
     int ret=1;
     int dir[]={0,1,2,3};   
-    int move_x[]={ 0, 1, 0, -1};
-    int move_y[]={-1, 0, 1,  0};
+    int move_x[]={ -1, 0, 1, 0};
+    int move_y[]={0, 1, 0,  -1};
 
     scanf("%d %d", &N, &M);
     scanf("%d %d %d", &A, &B, &D);
@@ -67,3 +67,8 @@ int main(){
     printf("%d", ret);
     return 0;
 }
+
+//direction을 먼저 바꾸고 해야 코드가 더 깔끔하다. 애초에 문제에서도 먼저 바꾸면서 탐색하라고 했으니까
+//array를 수정하면서 진행했는데 해설본에서는 배열을 두개 이용해서 판단했다.
+//오타 때문에 간단한 건데 하루종일 걸렸다. 문제 없어보이면 오타먼저 찾으려고 해 보자.
+
