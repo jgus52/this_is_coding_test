@@ -26,7 +26,7 @@ while True:
     nx=x+move_x[d]
     ny=y+move_y[d]
     if array[nx][ny]==0 :
-      array[nx][ny]=2;
+      array[nx][ny]=2
       x=nx
       y=ny
       ret+=1
